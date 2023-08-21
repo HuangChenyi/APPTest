@@ -56,6 +56,10 @@ const EJS_MODULES = [MenuModule, SidebarModule, ToolbarModule];
       {
         path: 'template-field',
         loadChildren: () => import('./web/template-field/template-field.module').then((m) => m.TemplateFieldModule)
+      },
+      {
+        path: 'demo-field',
+        loadChildren: () => import('./web/demo-field/demo-field.module').then((m) => m.DemoFieldModule)
       }
     ]),
     ...I18NSERVICE_MODULES,

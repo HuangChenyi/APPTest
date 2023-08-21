@@ -5,7 +5,15 @@
     "moduleName": "TemplateFieldModule",
     "app": {
       "exposedModule": "./TemplateField",
-      "moduleName": "FieldHelloWorldAppModule"
+      "moduleName": "TemplateFieldAppModule"
+    }
+  },
+  "demo-field": {
+    "exposedModule": "./DemoField",
+    "moduleName": "DemoFieldModule",
+    "app": {
+      "exposedModule": "./DemoField",
+      "moduleName": "DemoFieldAppModule"
     }
   }
 }

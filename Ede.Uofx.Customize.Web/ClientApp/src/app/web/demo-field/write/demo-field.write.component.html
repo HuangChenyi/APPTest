@@ -1,0 +1,47 @@
+<div>
+  <uofx-form-field-name [name]="name" [required]="required">
+  </uofx-form-field-name>
+</div>
+<div class="fw-control">
+  <span n *ngIf="exProps?.isShowHelloWorld ? true : false"
+  >hello 外掛欄位 write mode</span>
+  <table width="100%" [formGroup]="form">
+    <tr>
+      <Th>
+        <span>公司名稱</span>
+      </Th>
+      <td>
+        <p >
+          <button
+             class="e-btn u-btn-primary buttons-opposite"
+              data-ripple="true"
+             (click)="onOpen()">請選擇
+           </button>
+        </p>
+        <ejs-textbox
+
+          formControlName="companyName"
+        ></ejs-textbox>
+        <!-- <span *ngIf="!editable">{{ value.companyName }}</span> -->
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <span>地址</span>
+      </th>
+      <td>
+        <ejs-textbox formControlName="address"></ejs-textbox>
+        <!-- <span *ngIf="!editable">{{ value.address }}</span> -->
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <span>電話</span>
+      </th>
+      <td>
+        <ejs-textbox  formControlName="phone"></ejs-textbox>
+        <!-- <span *ngIf="!editable">{{ value.phone }}</span> -->
+      </td>
+    </tr>
+  </table>
+</div>

@@ -9,10 +9,9 @@ import { UofxFormTools } from '@uofx/web-components/form';
 
 @Component({
   selector: 'app-template-field',
-  templateUrl: './template-field.component.html',
-  styleUrls: ['./template-field.component.css']
+  templateUrl: './demo-field.component.html'
 })
-export class TemplateFieldComponent extends BpmFwWriteComponent implements OnInit {
+export class DemoFieldComponent extends BpmFwWriteComponent implements OnInit {
   // label: string = '🎉Hello World';
   form: FormGroup;
   value: any;
@@ -36,7 +35,7 @@ export class TemplateFieldComponent extends BpmFwWriteComponent implements OnIni
       this.valueChanges.emit(res);
     });
     this.cdr.detectChanges();
-
   }
+
 
 }
